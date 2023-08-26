@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Base.astro";
+---
+
+<Layout>
+	<main class="">
+		<header>
+			<h1>todos</h1>
+			<input type="text" placeholder="What needs to be done?" />
+		</header>
+		<section>
+			<input type="checkbox" id="toggle-all" />
+			<label for="toggle-all" title="Mark all as complete">
+				<ul>
+					<li>
+						<input type="checkbox" />
+						<input type="text" value="123" />
+						<button>X</button>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<input type="text" value="123" />
+						<button>X</button>
+					</li>
+				</ul>
+			</label>
+			<footer>
+				<span>1 item left</span>
+				<ul>
+					<li><a href="#?route=any">All</a></li>
+					<li><a href="#?route=pending">Active</a></li>
+					<li><a href="#?route=completed">Completed</a></li>
+				</ul>
+			</footer>
+		</section>
+	</main>
+	<footer>
+		<p>Double-click to edit a todo</p>
+		<p>Created by <a href="https://ali-web.site">Ali</a></p>
+		<p>Inspired by <a href="http://todomvc.com">TodoMVC</a></p>
+	</footer>
+</Layout>
